@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package badbot.messages;
+
+enum MessageType {
+    STATUS_BOT = 0;
+    CMD_TOGGLE = 1;
+    CMD_OPERATIONAL_MODE = 2;
+    CMD_TELEOP_MOVEMENT = 3;
+    HEARTBEAT_RC = 4;
+    VIDEO_FRAME = 5;
+}
+
+enum OperationalMode {
+    TELEOP = 0;
+    FOLLOW_ME = 1;
+    AUTONOMOUS = 2;
+}
+
+enum Devices {
+    LIDAR = 0; //lidar hardware device
+    LIDAR_RECORD = 1; //recording of lidar data
+    APPSRC = 2; //the app src element to publish mjpeg stream over udp
+    APPSINK = 3; //the app src to open v4l2 device
+    DRIVELINE = 4; //for issuing motor commands
+    VISUALTELEMETRY = 5; //for overlaying information on video stream
+    WS_VIDEO = 6; //video frames over web sockets for zMQ
+}

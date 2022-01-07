@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package badbot.messages;
+
+import "consts.proto";
+
+message CommandToggle {
+    Devices device = 1;
+    bool enable = 2;
+}

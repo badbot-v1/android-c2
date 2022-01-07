@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package badbot.messages;
+
+import "message.proto";
+import "google/protobuf/empty.proto";
+
+service BotService {
+    rpc processCommand(BadMessage) returns (google.protobuf.Empty);
+    rpc subscribeToUpdates(google.protobuf.Empty) returns (stream BadMessage);
+}

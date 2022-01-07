@@ -1,0 +1,28 @@
+offline-banner {
+    #box {
+      z-index: 6;
+      position: absolute;
+      width: 100%;
+      opacity: 0.6;
+      background: #8c8787;
+      text-align: center;
+  
+    }
+    .fadein{
+      animation-name: appear;
+      animation-duration: 2s;
+    }
+  
+    @keyframes appear {
+      0%   {background-color: red;}
+      25%  {opacity: 0.8;}
+      50%  {}
+      100% {background: #8c8787;opacity: 0.6;}
+    }
+  }
+  ion-app.ios offline-banner .margin {
+        margin-top: 43px;
+  }
+  ion-app.md offline-banner .margin {
+        margin-top: 56px;
+  }

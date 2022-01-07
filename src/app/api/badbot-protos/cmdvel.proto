@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package badbot.messages;
+
+message CmdVelocity {
+    int32 vX = 1;
+    int32 vY = 2;
+}

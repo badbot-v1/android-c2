@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package badbot.messages;
+
+import "consts.proto";
+
+message BotStatus {
+    bool lidarEnabled = 1;
+    bool lidarRecordingEnabled = 2;
+    OperationalMode mode = 3;
+    bool appSrcEnabled = 4;
+    bool wsVideoEnabled = 5;
+}

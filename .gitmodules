@@ -1,0 +1,6 @@
+[submodule "src/app/api/badbot-protos"]
+	path = src/app/api/badbot-protos
+	url = http://192.168.230.150:8080/faisal/badbot-protos.git
+[submodule "src/app/api/JSMQ"]
+	path = src/app/api/JSMQ
+	url = https://github.com/zeromq/JSMQ

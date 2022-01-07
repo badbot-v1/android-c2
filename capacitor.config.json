@@ -1,0 +1,9 @@
+{
+  "appId": "com.faisalthaheem.badbot",
+  "appName": "badbotrc",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {},
+  "linuxAndroidStudioPath" : "/opt/android-studio/bin/studio.sh"
+}

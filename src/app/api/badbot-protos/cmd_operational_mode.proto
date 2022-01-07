@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package badbot.messages;
+
+import "consts.proto";
+
+message CommandOperationalMode {
+    OperationalMode opMode = 1;
+}

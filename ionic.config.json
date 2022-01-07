@@ -1,0 +1,8 @@
+{
+  "name": "badbotrc",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

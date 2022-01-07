@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package badbot.messages;
+
+import "cmdtoggle.proto";
+import "botstatus.proto";
+import "consts.proto";
+import "cmd_operational_mode.proto";
+import "cmdvel.proto";
+import "videoframe.proto";
+
+message BadMessage {
+
+    string frame_id = 1;
+    MessageType msgType = 2;
+
+    oneof payload {
+        BotStatus status = 3;
+        CommandToggle toggleCmd = 4;
+        CommandOperationalMode opMode = 5;
+        CmdVelocity cmdVel = 6;
+        VideoFrame videoFrame = 7;
+    }
+}
